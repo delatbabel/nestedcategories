@@ -69,3 +69,9 @@ Run the seed (this will create root nodes for each of your category `types`)
 
 You may prefer to build your own **CategoriesTableSeeder** class based on the code in
 **CategoriesTableBaseSeeder** to seed your own initial set of categories.
+
+# Usage
+
+This class relies on the behind-the-scenes capabilities of Baum.  For details on the use
+of that see the [README on github](https://github.com/etrepat/baum) or the
+[Baum web site](http://etrepat.com/baum/)
