@@ -66,3 +66,6 @@ Run the seed (this will create root nodes for each of your category `types`)
 ```
     php artisan db:seed --class="CategoriesTableBaseSeeder"
 ```
+
+You may prefer to build your own **CategoriesTableSeeder** class based on the code in
+**CategoriesTableBaseSeeder** to seed your own initial set of categories.
