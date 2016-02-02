@@ -14,6 +14,7 @@ class CategoriesTableBaseSeeder extends Seeder
     {
         foreach ($nodes as $node_name => $node_children) {
 
+            // Create the highest level child node.
             $child_node = $root_node->children()->create([
                 'name' => $node_name
             ]);
@@ -22,6 +23,7 @@ class CategoriesTableBaseSeeder extends Seeder
             $child_node->description = $child_node->path;
             $child_node->save();
 
+            // Create all of the children of the child node, if there are any.
             if (! empty($node_children)) {
                 $this->createNodes($child_node, $node_children);
             }
@@ -75,8 +77,9 @@ class CategoriesTableBaseSeeder extends Seeder
             ]);
 
             // Create the children of the root node.
-            $this->createNodes($root_node, $node_children);
+            if (! empty($node_children)) {
+                $this->createNodes($root_node, $node_children);
+            }
         }
-
     }
 }
