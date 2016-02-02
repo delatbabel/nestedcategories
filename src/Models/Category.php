@@ -5,12 +5,16 @@
 namespace Delatbabel\NestedCategories\Models;
 
 use Baum\Node;
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
 
 /**
  * Category
  */
-class Category extends Node
+class Category extends Node implements SluggableInterface
 {
+    use SluggableTrait;
+
     /**
      * Status values for the database
      */
@@ -24,7 +28,7 @@ class Category extends Node
     public static $sluggable = array(
         'build_from'         => 'name',
         'save_to'            => 'slug',
-        'separator'          => '-',
+        'max_length'         => 255,
         'unique'             => true,
         'include_trashed'    => true,
     );

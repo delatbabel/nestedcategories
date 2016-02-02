@@ -6,9 +6,20 @@
 # (c) Del 2015 http://www.babel.com.au/
 #
 
-APPNAME='NestedCategories'
+APPNAME='Nested Categories'
 CMDFILE=apigen.cmd.$$
 DESTDIR=./documents
+SRCDIRS="src"
+VENDORDIRS="vendor/baum vendor/illuminate vendor/cviebrock vendor/cocur"
+
+#
+# Ensure that dependencies are installed (including codeception and phpunit)
+#
+if [ -f composer.lock ]; then
+    /usr/local/bin/composer install
+else
+    /usr/local/bin/composer update
+fi
 
 #
 # Find apigen, either in the path or as a local phar file
@@ -91,25 +102,25 @@ if [ -z "$1" ]; then
 #
 elif [ "$1" = "makecache" ]; then
     echo "Find application source directories"
-    find src -name \*.php -print | \
+    find $SRCDIRS -name \*.php -print | \
         (
             while read file; do
                 grep -q 'class' $file && dirname $file
             done
         ) | sort -u | \
-        grep -v -E 'config|docs|migrations|phpunit|test|Test|views|web' > dirlist.app
+        grep -v -E 'config|docs|migrations|test|Test|views|web' > dirlist.app
 
     echo "Find vendor source directories"
-    find vendor -name \*.php -print | \
+    find $VENDORDIRS -name \*.php -print | \
         (
             while read file; do
                 grep -q 'class' $file && dirname $file
             done
         ) | sort -u | \
-        grep -v -E 'config|docs|migrations|phpunit|codesniffer|test|Test|views' > dirlist.vendor
+        grep -v -E 'config|docs|migrations|test|Test|views|codesniffer|phpmd|pdepend|php-parser|codeception|phpunit' > dirlist.vendor
   
     #
-    # Filter out any vendor directories for which apigen fails
+    # Filter out any directories for which apigen fails
     #
     echo "Filter source directories"
     mkdir -p $DESTDIR/tmp
