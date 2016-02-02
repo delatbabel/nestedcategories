@@ -5,6 +5,7 @@
 namespace Delatbabel\NestedCategories;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 
 /**
  * NestedCategoriesServiceProvider

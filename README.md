@@ -1,6 +1,6 @@
 # nestedcategories
 
-A Laravel 5 package for adding one or more types of category hierarchies to a website.
+A Laravel 5 package for adding one or more types of category hierarchy to a website.
 
 e.g. a hierarchy for blog categories and another for product categories
 
