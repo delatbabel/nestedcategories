@@ -34,7 +34,7 @@ class Category extends Node implements SluggableInterface
      * Used for Cviebrock/EloquentSluggable
      * @var array
      */
-    public static $sluggable = array(
+    protected $sluggable = array(
         'build_from'         => 'name',
         'save_to'            => 'slug',
         'max_length'         => 255,
