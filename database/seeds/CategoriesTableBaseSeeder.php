@@ -1,8 +1,9 @@
 <?php
 
 use Delatbabel\NestedCategories\Models\Category;
+use Illuminate\Database\Seeder;
 
-class CategoriesTableBaseSeeder extends \Seeder
+class CategoriesTableBaseSeeder extends Seeder
 {
 
     public function run()
