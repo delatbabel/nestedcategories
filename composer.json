@@ -1,0 +1,32 @@
+{
+    "name": "delatbabel/nestedcategories",
+    "description": "Automatically encrypt and decrypt Eloquent attributes with ease.",
+    "keywords": ["eloquent", "l5", "laravel", "laravel5", "categories", "heirarchy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Del",
+            "email": "del@babel.com.au"
+        },
+        {
+            "name": "Neil Crookes",
+            "email": "neil.crookes@fivebyfiveuk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/contracts": "^5.0",
+        "illuminate/support": "^5.0",
+        "cviebrock/eloquent-sluggable": "~3.0",
+        "baum/baum": "~1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Delatbabel\\NestedCategories\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
