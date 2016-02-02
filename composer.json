@@ -1,6 +1,6 @@
 {
     "name": "delatbabel/nestedcategories",
-    "description": "Automatically encrypt and decrypt Eloquent attributes with ease.",
+    "description": "A Laravel 5 package for nested categories.",
     "keywords": ["eloquent", "l5", "laravel", "laravel5", "categories", "heirarchy"],
     "license": "MIT",
     "authors": [
