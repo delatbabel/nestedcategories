@@ -18,6 +18,10 @@ class CategoriesTableBaseSeeder extends Seeder
                 'name' => $node_name
             ]);
 
+            // Update the description, just for fun
+            $child_node->description = $child_node->path;
+            $child_node->save();
+
             if (! empty($node_children)) {
                 $this->createNodes($child_node, $node_children);
             }

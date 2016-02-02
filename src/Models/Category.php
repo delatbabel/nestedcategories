@@ -25,12 +25,6 @@ class Category extends Node implements SluggableInterface
     use SluggableTrait;
 
     /**
-     * Status values for the database
-     */
-    const DRAFT     = 'DRAFT';
-    const APPROVED  = 'APPROVED';
-
-    /**
      * Used for Cviebrock/EloquentSluggable
      * @var array
      */
@@ -109,18 +103,6 @@ class Category extends Node implements SluggableInterface
     {
         unset($this->{$this->getParentColumnName()});
         static::$moveToNewParentId = false;
-    }
-
-    /**
-     * Adds a query scope to add conditions to query object
-     *
-     * @param $query
-     * @return mixed
-     */
-    public function scopeLive($query)
-    {
-        return $query->where('status', '=', self::APPROVED)
-            ->where('published_date', '<=', \Carbon\Carbon::now());
     }
 
     /**

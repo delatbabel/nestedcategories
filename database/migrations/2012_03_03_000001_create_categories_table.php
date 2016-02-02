@@ -28,8 +28,6 @@ class CreateCategoriesTable extends Migration
             // $table->string('name', 255);
             $table->string('name', 255);
             $table->string('slug', 255)->unique();
-            $table->enum('status', array('DRAFT', 'APPROVED'))->default('DRAFT');
-            $table->dateTime('published_date');
             $table->longText('description');
             $table->longText('extended_data');
 
