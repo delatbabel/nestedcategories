@@ -10,6 +10,15 @@ use Cviebrock\EloquentSluggable\SluggableTrait;
 
 /**
  * Category
+ *
+ * A Laravel 5 package for adding one or more types of category hierarchy to a website.
+ *
+ * e.g. a hierarchy for blog categories and another for product categories
+ *
+ * This is a Laravel 5 reimplementation of
+ * [Laravel 4 Categories](https://github.com/FbF/Laravel-Categories)
+ *
+ * @link https://github.com/delatbabel/nestedcategories
  */
 class Category extends Node implements SluggableInterface
 {
