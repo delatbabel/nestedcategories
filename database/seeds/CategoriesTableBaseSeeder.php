@@ -5,8 +5,53 @@ use Illuminate\Database\Seeder;
 
 class CategoriesTableBaseSeeder extends Seeder
 {
+    /**
+     * Return an array of nodes.
+     *
+     * Over-ride this function in your real seeder class.
+     *
+     * @return array
+     */
+    protected function getNodes()
+    {
+        /**
+         * The types of categories in your site, e.g. Products, Blog etc.
+         *
+         * Replace this with whatever you want in your initial seeder.  Note
+         * the structure of each node -- node_name => children where children
+         * must be an array.
+         */
+        return [
+            'Blog' => [
+                'Politics'  => [],
+                'Fashion'   => [],
+                'Sailing'   => [],
+                'Technical'   => [],
+            ],
+            'Products' => [
+                'Flowers'   => [
+                    'Roses'     => [],
+                    'Geraniums' => [],
+                    'Lillies'      => [],
+                ],
+                'Games'     => [
+                    'Board Games'   => [
+                        'Strategy_Games'    => [],
+                        'Euro Games'        => [],
+                    ],
+                    'Computer Games' => [
+                        'FPS'                   => [],
+                        'Real Time Strategy'    => [],
+                        'War Games'             => [],
+                    ],
+                ],
+            ],
+        ];
+    }
 
     /**
+     * Create all of the child nodes of a root node.
+     *
      * @param Category $root_node
      * @param array $nodes
      */
@@ -35,37 +80,7 @@ class CategoriesTableBaseSeeder extends Seeder
     {
         DB::table('categories')->delete();
 
-        /**
-         * The types of categories in your site, e.g. Products, Blog etc.
-         *
-         * Replace this with whatever you want in your initial seeder.
-         */
-        $nodes = [
-            'Blog' => [
-                'Politics'  => [],
-                'Fashion'   => [],
-                'Sailing'   => [],
-                'Technical'   => [],
-            ],
-            'Products' => [
-                'Flowers'   => [
-                    'Roses'     => [],
-                    'Geraniums' => [],
-                    'Lillies'      => [],
-                ],
-                'Games'     => [
-                    'Board Games'   => [
-                        'Strategy_Games'    => [],
-                        'Euro Games'        => [],
-                    ],
-                    'Computer Games' => [
-                        'FPS'                   => [],
-                        'Real Time Strategy'    => [],
-                        'War Games'             => [],
-                    ],
-                ],
-            ],
-        ];
+        $nodes = $this->getNodes();
 
         // Build the above list of nodes as a heirarchical tree
         // of categories.
