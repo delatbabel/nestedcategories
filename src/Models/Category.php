@@ -39,6 +39,10 @@ class Category extends Node implements SluggableInterface
      */
     protected $oldParentId = null;
 
+    protected $casts = [
+        'extended_data'     => 'array',
+    ];
+
     /**
      * The "booting" method of the model.
      *
@@ -50,7 +54,8 @@ class Category extends Node implements SluggableInterface
 
         static::updating(function ($category) {
 
-            // Baum triggers a parent move, which puts the item last in the list, even if the old and new parents are the same
+            // Baum triggers a parent move, which puts the item last in the list,
+            // even if the old and new parents are the same
             if ($category->isParentIdSame()) {
                 $category->stopBaumParentMove();
             }
