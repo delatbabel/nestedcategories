@@ -78,8 +78,6 @@ class CategoriesTableBaseSeeder extends Seeder
 
     public function run()
     {
-        DB::table('categories')->delete();
-
         $nodes = $this->getNodes();
 
         // Build the above list of nodes as a heirarchical tree

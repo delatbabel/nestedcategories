@@ -6,6 +6,7 @@ namespace Delatbabel\NestedCategories;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
+use App;
 
 /**
  * NestedCategoriesServiceProvider
@@ -41,8 +42,10 @@ class NestedCategoriesServiceProvider extends ServiceProvider
             __DIR__ . '/../database/seeds' => $this->app->databasePath() . '/seeds'
         ], 'seeds');
 
-        \App::register(\Baum\Providers\BaumServiceProvider::class);
-        \App::register(\Cviebrock\EloquentSluggable\SluggableServiceProvider::class);
+        // Register other providers required by this provider, which saves the caller
+        // from having to register them each individually.
+        App::register(\Baum\Providers\BaumServiceProvider::class);
+        App::register(\Cviebrock\EloquentSluggable\SluggableServiceProvider::class);
     }
 
     /**
