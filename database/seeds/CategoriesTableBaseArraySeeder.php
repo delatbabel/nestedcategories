@@ -98,6 +98,10 @@ class CategoriesTableBaseArraySeeder extends Seeder
                 'name' => $node_name,
             ]);
 
+            // Update the description, just for fun
+            $root_node->description = $root_node->path;
+            $root_node->save();
+
             // Create the children of the root node.
             if (! empty($node_children)) {
                 $this->createNodes($root_node, $node_children);

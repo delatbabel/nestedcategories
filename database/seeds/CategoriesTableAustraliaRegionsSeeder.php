@@ -14,7 +14,7 @@ use Delatbabel\NestedCategories\Models\Category;
  *
  * @link https://en.wikipedia.org/wiki/List_of_regions_of_Australia
  */
-class CategoriesTableAustraliaRegionsArraySeeder extends CategoriesTableBaseListSeeder
+class CategoriesTableAustraliaRegionsSeeder extends CategoriesTableBaseListSeeder
 {
     /**
      * Return a list.

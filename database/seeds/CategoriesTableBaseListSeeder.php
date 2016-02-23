@@ -73,6 +73,11 @@ class CategoriesTableBaseListSeeder extends Seeder
                 $root_node = Category::create([
                     'name' => $node_name,
                 ]);
+
+                // Update the description, just for fun
+                $root_node->description = $root_node->path;
+                $root_node->save();
+
                 $parent = [
                     0   => $root_node,
                 ];
@@ -93,6 +98,10 @@ class CategoriesTableBaseListSeeder extends Seeder
             $child_node = $current->children()->create([
                 'name' => $node_name
             ]);
+
+            // Update the description, just for fun
+            $child_node->description = $child_node->path;
+            $child_node->save();
 
             // Store this node name as a potential future parent.
             $parent[$levels] = $child_node;

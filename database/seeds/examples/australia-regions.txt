@@ -7,8 +7,10 @@ Australia
 ** Greater Western Sydney
 ** Far South Coast
 ** Far West
-** Hunter Region (Newcastle)
-** Illawarra (Wollongong)
+** Hunter Region
+*** Newcastle City
+** Illawarra
+*** Wollongong City
 ** Lord Howe Island
 ** New England (north-west)
 ** Murray
@@ -29,14 +31,14 @@ Australia
 * Northern Territory
 ** Arnhem Land
 ** Barkly Tableland
-** Central Australia/Alice Springs Region/Red Centre
+** Alice Springs Region
+** Red Centre
 ** Darwin Region
 ** Katherine Region
 ** Top End
 ** Victoria River
 * Queensland
 ** Central Queensland
-*** Channel Country
 *** Capricorn Coast
 ** Darling Downs
 *** Granite Belt
@@ -58,7 +60,8 @@ Australia
 *** Channel Country
 * South Australia
 ** Adelaide Plains
-** Adelaide Hills/Mount Lofty Ranges
+** Adelaide Hills
+** Mount Lofty Ranges
 ** Barossa Valley
 ** Eyre Peninsula
 ** Far North
@@ -97,7 +100,7 @@ Australia
 *** Central Coast
 **** Bass Coast
 *** Upper Goulburn
-** Northern Country/North Central
+** Northern Country
 *** Central Murray
 *** Lower Goulburn
 *** Goulburn Valley
@@ -115,13 +118,10 @@ Australia
 **** Gippsland Lakes
 *** Central Gippsland Coast
 *** East Gippsland Coast
-*** Victorian Alps
 ** Western District
-*** Central Highlands/Tablelands
+*** Central Highlands
 *** Pyrenees
 *** The Grampians
-*** Goldfields
-**** Spa Country
 ** Southwest
 *** The Otways
 *** West Coast
