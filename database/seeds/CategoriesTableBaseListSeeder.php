@@ -2,6 +2,7 @@
 /**
  * Class CategoriesTableBaseListSeeder
  */
+
 use Delatbabel\NestedCategories\Models\Category;
 use Illuminate\Database\Seeder;
 
@@ -62,8 +63,6 @@ class CategoriesTableBaseListSeeder extends Seeder
         $parent = array();
 
         foreach ($nodes as $load_record) {
-            Log::debug(__CLASS__ . ':' . __TRAIT__ . ':' . __FILE__ . ':' . __LINE__ . ':' . __FUNCTION__ . ':' .
-                $load_record);
             $match = preg_match('/^\*+/', $load_record, $matches);
 
             // If there is no match then we have hit a top level category.
