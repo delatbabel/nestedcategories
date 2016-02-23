@@ -74,6 +74,7 @@ class CategoriesTableBaseArraySeeder extends Seeder
             ]);
 
             // Update the description, just for fun
+            /** @var Category $child_node */
             $child_node->description = $child_node->path;
             $child_node->save();
 
@@ -95,12 +96,9 @@ class CategoriesTableBaseArraySeeder extends Seeder
 
             // Create each root node.
             $root_node = Category::create([
-                'name' => $node_name,
+                'name'          => $node_name,
+                'description'   => $node_name,
             ]);
-
-            // Update the description, just for fun
-            $root_node->description = $node_name;
-            $root_node->save();
 
             // Create the children of the root node.
             if (! empty($node_children)) {

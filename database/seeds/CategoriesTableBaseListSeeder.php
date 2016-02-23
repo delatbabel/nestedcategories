@@ -71,12 +71,9 @@ class CategoriesTableBaseListSeeder extends Seeder
             if ($match === 0) {
                 $node_name = trim($load_record);
                 $root_node = Category::create([
-                    'name' => $node_name,
+                    'name'          => $node_name,
+                    'description'   => $node_name,
                 ]);
-
-                // Update the description, just for fun
-                $root_node->description = $node_name;
-                $root_node->save();
 
                 $parent = [
                     0   => $root_node,
