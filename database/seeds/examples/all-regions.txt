@@ -1,0 +1,274 @@
+Regions
+* Australia
+** New-South Wales
+*** Blue Mountains
+*** Central Coast
+*** Central Tablelands
+*** Central West
+*** Greater Western Sydney
+*** Far South Coast
+*** Far West
+*** Hunter Region
+**** Newcastle City
+*** Illawarra
+**** Wollongong City
+*** Lord Howe Island
+*** New England (north-west)
+*** Murray
+*** Mid North Coast
+*** North West Slopes
+*** Northern Rivers
+*** Northern Tablelands
+*** Orana
+*** Riverina
+*** Sapphire Coast
+*** Snowy Mountains
+*** South Coast
+*** Southern Highlands
+*** Southern Tablelands
+*** South West Slopes
+*** Sunraysia
+*** Sydney
+** Northern Territory
+*** Arnhem Land
+*** Barkly Tableland
+*** Alice Springs Region
+*** Red Centre
+*** Darwin Region
+*** Katherine Region
+*** Top End
+*** Victoria River
+** Queensland
+*** Central Queensland
+**** Capricorn Coast
+*** Darling Downs
+**** Granite Belt
+**** Maranoa
+*** Far North Queensland
+**** Torres Strait Islands
+**** Gulf Country
+*** North Queensland
+**** Whitsunday
+*** South East Queensland
+**** Brisbane
+**** Gold Coast
+**** Sunshine Coast
+**** West Moreton
+*** Wide Bay-Burnett
+**** South Burnett
+*** Central West Queensland
+*** South West Queensland
+**** Channel Country
+** South Australia
+*** Adelaide Plains
+*** Adelaide Hills
+*** Mount Lofty Ranges
+*** Barossa Valley
+*** Eyre Peninsula
+*** Far North
+*** Fleurieu Peninsula
+*** Flinders Ranges
+*** Kangaroo Island
+*** Limestone Coast
+*** Mid North
+**** Clare Valley
+*** Murray Mallee
+**** Murraylands
+**** Riverland
+*** Yorke Peninsula
+**** Copper Triangle
+** Tasmania
+*** Central Highlands
+*** Midlands
+*** West Coast
+*** Hobart
+** Victoria
+*** Barwon South West
+*** Grampians
+*** Greater Melbourne
+*** Hume
+*** Loddon Mallee
+*** Central Victoria
+**** Yarra Valley
+**** Upper Yarra
+**** The Bays
+***** Port Phillip
+***** Mornington Peninsula
+***** Bellarine Peninsula
+***** Western Port
+**** Goldfields
+***** Spa Country
+**** Central Coast
+***** Bass Coast
+**** Upper Goulburn
+*** Northern Country
+**** Central Murray
+**** Lower Goulburn
+**** Goulburn Valley
+**** Southern Riverina
+*** Northeast
+**** Victorian Alps
+**** Upper Murray
+**** High Country
+**** Bogong High Plains
+*** Gippsland
+**** East Gippsland
+**** West Gippsland
+**** South Gippsland
+**** Central Gippsland
+***** Gippsland Lakes
+**** Central Gippsland Coast
+**** East Gippsland Coast
+*** Western District
+**** Central Highlands
+**** Pyrenees
+**** The Grampians
+*** Southwest
+**** The Otways
+**** West Coast
+***** Shipwreck Coast
+***** Great Ocean Road
+***** Surf Coast
+*** Northwest
+**** The Mallee
+***** Sunraysia
+***** Millewa
+**** The Wimmera
+** Western Australia
+*** Gascoyne
+*** Goldfields-Esperance
+*** Great Southern
+*** Kimberley
+*** Mid West
+*** Peel
+*** Pilbara
+*** South West
+*** Wheatbelt
+* New Zealand
+** North Island
+*** Northland
+*** Auckland
+*** Waikato
+*** Bay of Plenty
+*** Gisborne
+*** Hawke's Bay
+*** Taranaki
+*** Manawatu-Wanganui
+*** Wellington
+** South Island
+*** Tasman
+*** Nelson
+*** Marlborough
+*** West Coast
+*** Canterbury
+*** Otago
+*** Southland
+* Singapore
+** Central
+** East
+** North
+** North-East
+** West
+* United Kingdom
+** England
+*** Bedfordshire 
+*** Berkshire 
+*** Bristol 
+*** Buckinghamshire 
+*** Cambridgeshire 
+*** Cheshire 
+*** Cornwall 
+*** County Durham 
+*** Cumbria 
+*** Derbyshire 
+*** Devon 
+*** Dorset 
+*** East Riding of Yorkshire 
+*** East Sussex 
+*** Essex 
+*** Gloucestershire 
+*** Greater Manchester 
+*** Hampshire 
+*** Hereford & Worcester 
+*** Hertfordshire 
+*** Isle of Wight 
+*** Kent 
+*** Lancashire 
+*** Leicestershire 
+*** Lincolnshire 
+*** London 
+*** Merseyside 
+*** Middlesex 
+*** Norfolk 
+*** Northamptonshire 
+*** Northumberland 
+*** North Yorkshire 
+*** Nottinghamshire 
+*** Oxfordshire 
+*** Shropshire 
+*** Somerset 
+*** South Yorkshire 
+*** Staffordshire 
+*** Suffolk 
+*** Surrey 
+*** Tyne & Wear 
+*** Warwickshire 
+*** West Midlands 
+*** West Sussex 
+*** West Yorkshire 
+*** Wiltshire 
+** Wales
+*** Denbighshire
+*** Flintshire
+*** Ceredigion
+*** Carmarthenshire
+*** Pembrokeshire
+*** Monmouthshire
+*** Anglesey
+*** Caernarfonshire and Merionethshire
+*** Powys 	 
+*** Cardiff
+*** Swansea
+** Scotland
+*** Aberdeenshire 
+*** Angus 
+*** Argyllshire 
+*** Ayrshire 
+*** Banffshire 
+*** Berwickshire 
+*** Borders 
+*** Bute 
+*** Caithness 
+*** Central 
+*** Clackmannanshire 
+*** Dumfries-shire 
+*** Dumfries and Galloway 
+*** Dunbartonshire 
+*** East Lothian 
+*** Fife 
+*** Grampian 
+*** Highland 
+*** Inverness-shire 
+*** Kincardine 
+*** Kinross 
+*** Kirkcudbrightshire 
+*** Lanarkshire 
+*** Lothian 
+*** Midlothian 
+*** Morayshire 
+*** Nairn 
+*** Orkney 
+*** Peebles-shire 
+*** Perth 
+*** Renfrewshire 
+*** Ross and Cromarty 
+*** Roxburghshire 
+*** Selkirkshire 
+*** Shetland 
+*** Strathclyde 
+*** Stirlingshire 
+*** Sutherland 
+*** Tayside 
+*** West Lothian 
+*** Western Isles 
+*** Wigtownshire 
