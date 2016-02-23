@@ -1,9 +1,18 @@
 <?php
-
+/**
+ * Class CategoriesTableBaseArraySeeder
+ */
 use Delatbabel\NestedCategories\Models\Category;
 use Illuminate\Database\Seeder;
 
-class CategoriesTableBaseSeeder extends Seeder
+/**
+ * Class CategoriesTableBaseArraySeeder
+ *
+ * This is an example class to seed the Categories table from an array.
+ *
+ * See the getNodes() function for the array structure.
+ */
+class CategoriesTableBaseArraySeeder extends Seeder
 {
     /**
      * Return an array of nodes.
