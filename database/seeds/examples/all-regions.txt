@@ -1,6 +1,6 @@
 Regions
 * Australia
-** New-South Wales
+** New South Wales
 *** Blue Mountains
 *** Central Coast
 *** Central Tablelands
