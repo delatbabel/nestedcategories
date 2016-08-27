@@ -6,7 +6,7 @@
  * @link https://github.com/ddpro/admin/blob/master/docs/model-configuration.md
  */
 
-return array(
+return [
 
     'title' => 'Categories',
 
@@ -17,48 +17,48 @@ return array(
     /**
      * The display columns
      */
-    'columns' => array(
+    'columns' => [
         'id',
-        'name' => array(
+        'name' => [
             'title' => 'Name',
-        ),
-        'description' => array(
+        ],
+        'description' => [
             'title' => 'Description',
-        ),
-    ),
+        ],
+    ],
 
     /**
      * The filter set
      */
-    'filters' => array(
-        'name' => array(
+    'filters' => [
+        'name' => [
             'title' => 'Name',
-        ),
-    ),
+        ],
+    ],
 
     /**
      * The editable fields
      */
-    'edit_fields' => array(
-        'name' => array(
+    'edit_fields' => [
+        'name' => [
             'title' => 'Name',
-            'type' => 'text',
-        ),
-        'description' => array(
+            'type'  => 'text',
+        ],
+        'description' => [
             'title' => 'Description',
-            'type' => 'text',
-        ),
-        'parent' => array(
-            'title' => 'Parent Category Name',
-            'type' => 'relationship',
-            'name_field' => 'name',
+            'type'  => 'text',
+        ],
+        'parent' => [
+            'title'              => 'Parent Category Name',
+            'type'               => 'relationship',
+            'name_field'         => 'name',
             'options_sort_field' => 'name',
-        ),
-        'extended_data' => array(
+        ],
+        'extended_data' => [
             'title' => 'Extended Data',
-            'type' => 'textarea',
-        ),
-    ),
+            'type'  => 'textarea',
+        ],
+    ],
 
     'form_width' => 500,
-);
+];

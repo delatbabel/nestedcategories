@@ -60,7 +60,7 @@ class CategoriesTableBaseListSeeder extends Seeder
     protected function createNodes($nodes)
     {
         // $parent is the array of parent nodes.
-        $parent = array();
+        $parent = [];
 
         foreach ($nodes as $load_record) {
             $match = preg_match('/^\*+/', $load_record, $matches);

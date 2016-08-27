@@ -32,15 +32,15 @@ class CategoriesTableBaseArraySeeder extends Seeder
          */
         return [
             'Blog' => [
-                'Politics'  => [],
-                'Fashion'   => [],
-                'Sailing'   => [],
+                'Politics'    => [],
+                'Fashion'     => [],
+                'Sailing'     => [],
                 'Technical'   => [],
             ],
             'Products' => [
                 'Flowers'   => [
-                    'Roses'     => [],
-                    'Geraniums' => [],
+                    'Roses'        => [],
+                    'Geraniums'    => [],
                     'Lillies'      => [],
                 ],
                 'Games'     => [
@@ -83,7 +83,6 @@ class CategoriesTableBaseArraySeeder extends Seeder
                 $this->createNodes($child_node, $node_children);
             }
         }
-
     }
 
     public function run()
