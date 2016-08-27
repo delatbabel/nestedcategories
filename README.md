@@ -1,5 +1,9 @@
 # nestedcategories
 
+[![StyleCI](https://styleci.io/repos/51966591/shield)](https://styleci.io/repos/51966591)
+[![Latest Stable Version](https://poser.pugx.org/delatbabel/nestedcategories/version.png)](https://packagist.org/packages/ddpro/nestedcategories)
+[![Total Downloads](https://poser.pugx.org/delatbabel/nestedcategories/d/total.png)](https://packagist.org/packages/delatbabel/nestedcategories)
+
 A Laravel 5 package for adding one or more types of category hierarchy to a website.
 
 e.g. a hierarchy for blog categories and another for product categories
