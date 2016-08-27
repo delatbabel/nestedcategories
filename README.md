@@ -1,6 +1,6 @@
 # nestedcategories
 
-[![StyleCI](https://styleci.io/repos/51966591/shield)](https://styleci.io/repos/51966591)
+[![StyleCI](https://styleci.io/repos/50892606/shield)](https://styleci.io/repos/50892606)
 [![Latest Stable Version](https://poser.pugx.org/delatbabel/nestedcategories/version.png)](https://packagist.org/packages/ddpro/nestedcategories)
 [![Total Downloads](https://poser.pugx.org/delatbabel/nestedcategories/d/total.png)](https://packagist.org/packages/delatbabel/nestedcategories)
 
