@@ -28,13 +28,13 @@ class Category extends Node implements SluggableInterface
      * Used for Cviebrock/EloquentSluggable
      * @var array
      */
-    protected $sluggable = array(
+    protected $sluggable = [
         'build_from'         => 'name',
         'save_to'            => 'slug',
         'max_length'         => 255,
         'unique'             => true,
         'include_trashed'    => true,
-    );
+    ];
 
     /**
      * Stores the old parent id before editing
@@ -62,24 +62,23 @@ class Category extends Node implements SluggableInterface
             if ($category->isParentIdSame()) {
                 $category->stopBaumParentMove();
             }
-
         });
     }
 
     /**
-	 * Check for dirty parent ID.
-	 *
-	 * Returns true if the parent_id value in the database is different to the current
-	 * value in the model's dirty attributes
-	 *
-	 * @return bool
+     * Check for dirty parent ID.
+     *
+     * Returns true if the parent_id value in the database is different to the current
+     * value in the model's dirty attributes
+     *
+     * @return bool
      */
     protected function isParentIdSame()
     {
-        $dirty = $this->getDirty();
-        $oldNavItem = self::where('id', '=', $this->id)->first();
-        $oldParent = $oldNavItem->parent;
-        $oldParentId = $oldParent->id;
+        $dirty             = $this->getDirty();
+        $oldNavItem        = self::where('id', '=', $this->id)->first();
+        $oldParent         = $oldNavItem->parent;
+        $oldParentId       = $oldParent->id;
         $isParentColumnSet = isset($dirty[$this->getParentColumnName()]);
         if ($isParentColumnSet) {
             $isNewParentSameAsOld = $dirty[$this->getParentColumnName()] == $oldParentId;
@@ -90,14 +89,14 @@ class Category extends Node implements SluggableInterface
     }
 
     /**
-	 * Reset parent ID.
-	 *
-	 * Removes the parent_id field from the model's attributes and sets $moveToNewParentId
-	 * static property on the parent Baum\Node model class to false to prevent Baum from
-	 * triggering a move. This can be required because Baum triggers a parent move, which
-	 * puts the item last in the list, even if the old and new parents are the same.
-	 *
-	 * @return void
+     * Reset parent ID.
+     *
+     * Removes the parent_id field from the model's attributes and sets $moveToNewParentId
+     * static property on the parent Baum\Node model class to false to prevent Baum from
+     * triggering a move. This can be required because Baum triggers a parent move, which
+     * puts the item last in the list, even if the old and new parents are the same.
+     *
+     * @return void
      */
     protected function stopBaumParentMove()
     {
@@ -116,7 +115,7 @@ class Category extends Node implements SluggableInterface
     public function getPathAttribute()
     {
         $ancestors = $this->getAncestors();
-        $return = array();
+        $return    = [];
         foreach ($ancestors as $ancestor) {
             $return[] = $ancestor->name;
         }
