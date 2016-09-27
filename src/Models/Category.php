@@ -7,6 +7,7 @@ namespace Delatbabel\NestedCategories\Models;
 use Baum\Node;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
+use Delatbabel\Fluents\Fluents;
 
 /**
  * Category
@@ -22,7 +23,7 @@ use Cviebrock\EloquentSluggable\SluggableTrait;
  */
 class Category extends Node implements SluggableInterface
 {
-    use SluggableTrait;
+    use SluggableTrait, Fluents;
 
     /**
      * Used for Cviebrock/EloquentSluggable
