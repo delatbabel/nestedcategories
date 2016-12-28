@@ -79,10 +79,10 @@ class Category extends Node implements SluggableInterface
         $dirty             = $this->getDirty();
         $oldNavItem        = self::where('id', '=', $this->id)->first();
         $oldParent         = $oldNavItem->parent;
-        $oldParentId       = $oldParent->id;
+        $oldParentId       = empty($oldParent) ? null : $oldParent->id;
         $isParentColumnSet = isset($dirty[$this->getParentColumnName()]);
         if ($isParentColumnSet) {
-            $isNewParentSameAsOld = $dirty[$this->getParentColumnName()] == $oldParentId;
+            $isNewParentSameAsOld = ($dirty[$this->getParentColumnName()] == $oldParentId);
         } else {
             $isNewParentSameAsOld = false;
         }
