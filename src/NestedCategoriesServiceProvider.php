@@ -31,7 +31,9 @@ class NestedCategoriesServiceProvider extends ServiceProvider
      */
     public function boot(DispatcherContract $events)
     {
-        parent::boot($events);
+        if (method_exists('Illuminate\\Support\\ServiceProvider', 'boot')) {
+            parent::boot($events);
+        }
 
         // Publish the database migrations and seeds
         $this->publishes([
@@ -47,7 +49,7 @@ class NestedCategoriesServiceProvider extends ServiceProvider
         // Register other providers required by this provider, which saves the caller
         // from having to register them each individually.
         $this->app->register(\Baum\Providers\BaumServiceProvider::class);
-        $this->app->register(\Cviebrock\EloquentSluggable\SluggableServiceProvider::class);
+        $this->app->register(\Cviebrock\EloquentSluggable\ServiceProvider::class);
     }
 
     /**
