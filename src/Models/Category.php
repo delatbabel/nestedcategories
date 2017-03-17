@@ -5,8 +5,8 @@
 namespace Delatbabel\NestedCategories\Models;
 
 use Baum\Node;
-use Cviebrock\EloquentSluggable\SluggableInterface;
-use Cviebrock\EloquentSluggable\SluggableTrait;
+use Cviebrock\EloquentSluggable\Sluggable;
+
 use Delatbabel\Fluents\Fluents;
 
 /**
@@ -21,21 +21,9 @@ use Delatbabel\Fluents\Fluents;
  *
  * @link https://github.com/delatbabel/nestedcategories
  */
-class Category extends Node implements SluggableInterface
+class Category extends Node
 {
-    use SluggableTrait, Fluents;
-
-    /**
-     * Used for Cviebrock/EloquentSluggable
-     * @var array
-     */
-    protected $sluggable = [
-        'build_from'         => 'name',
-        'save_to'            => 'slug',
-        'max_length'         => 255,
-        'unique'             => true,
-        'include_trashed'    => true,
-    ];
+    use Sluggable, Fluents;
 
     /**
      * Stores the old parent id before editing
@@ -46,6 +34,16 @@ class Category extends Node implements SluggableInterface
     protected $casts = [
         'extended_data'     => 'array',
     ];
+
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'name',
+                'includeTrashed' => true,
+            ],
+        ];
+    }
 
     /**
      * The "booting" method of the model.
