@@ -4,8 +4,11 @@ namespace Delatbabel\NestedCategories\Helpers;
 
 class CategoryHelper {
     public static function filterCategoriesByParentSlug($query, $slug) {
-        $query->where(
-            'parent_id', \Delatbabel\NestedCategories\Models\Category::where('slug', $slug)->first()->id
-        );
+        $obj = \Delatbabel\NestedCategories\Models\Category::where('slug', $slug)->first();
+        if ($obj) {
+            $query->where('parent_id', $obj->id);
+        } else {
+            $query->where('slug', $slug);
+        }
     }
 }
